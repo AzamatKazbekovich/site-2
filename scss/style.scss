@@ -27,7 +27,7 @@ body {
 // === header ===
 .section-header {
   background: url("/image/Rectangle\ 464.png") no-repeat 50% 50%;
-  width: 1900px;
+
   height: 910px;
   background-size: cover;
   position: relative;
@@ -264,6 +264,94 @@ body {
         line-height: 28px;
         padding-left: 14px;
       }
+    }
+  }
+}
+// === / promo ===
+
+// === ad ===
+
+.section-ad {
+  position: relative;
+  height: 1537px;
+  @include font-main;
+
+  &-personal {
+    position: absolute;
+    display: flex;
+
+    &-b {
+      padding-left: 82px;
+
+      &-title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43.88px;
+        margin-bottom: 24px;
+      }
+
+      &-subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29.26px;
+        margin-bottom: 12px;
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        width: 496px;
+      }
+    }
+  }
+
+  &-a {
+    position: absolute;
+    top: 550px;
+    right: 0;
+  }
+
+  &-b {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  &-c {
+    position: absolute;
+    top: 899px;
+    left: 701px;
+  }
+
+  &-d {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  &-e {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 40%;
+
+    width: 388px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29.25px;
+      margin-bottom: 22px;
+      .red {
+        color: $color-red;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 }
