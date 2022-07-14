@@ -15,12 +15,17 @@
 
 $color-white: #ffffff;
 $color-red: #a92a1d;
+$color-black: #000000;
 
 // === / Variables ===
 
+body {
+  background-color: $color-black;
+  color: $color-white;
+}
+
 // === header ===
 .section-header {
-  color: $color-white;
   background: url("/image/Rectangle\ 464.png") no-repeat 50% 50%;
   width: 1900px;
   height: 910px;
@@ -177,4 +182,89 @@ $color-red: #a92a1d;
     }
   }
 }
-// === /header ===
+
+// === / header ===
+
+// === promo ===
+.section-promo {
+  &-popular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 155px;
+    @include font-main;
+    margin-bottom: 113px;
+
+    &-title {
+      width: 422px;
+      height: 59px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58.51px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 29px;
+    }
+
+    &-text {
+      width: 1100px;
+      height: 93px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+
+      margin-left: 405px;
+      margin-right: 405px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    &-line {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-photo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 116px;
+
+    &-b {
+      margin-top: 60px;
+    }
+
+    &-d {
+      margin-top: 60px;
+    }
+  }
+
+  &-ultimate {
+    display: flex;
+    justify-content: space-around;
+    @include font-main;
+    margin-bottom: 170px;
+
+    &-title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43.88px;
+      width: 373px;
+      height: 132px;
+    }
+
+    &-subtitle {
+      display: flex;
+
+      &-text {
+        font-weight: 400;
+        width: 699px;
+        height: 136px;
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 14px;
+      }
+    }
+  }
+}
+// === / promo ===

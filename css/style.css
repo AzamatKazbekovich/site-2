@@ -309,8 +309,12 @@ template {
   display: none;
 }
 
-.section-header {
+body {
+  background-color: #000000;
   color: #ffffff;
+}
+
+.section-header {
   background: url("/image/Rectangle 464.png") no-repeat 50% 50%;
   width: 1900px;
   height: 910px;
@@ -434,4 +438,72 @@ template {
 }
 .section-header-content-r-twitter {
   margin-bottom: 48px;
+}
+
+.section-promo-popular {
+  display: flex;
+  flex-direction: column;
+  margin-top: 155px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 113px;
+}
+.section-promo-popular-title {
+  width: 422px;
+  height: 59px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58.51px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+}
+.section-promo-popular-text {
+  width: 1100px;
+  height: 93px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 405px;
+  margin-right: 405px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-promo-popular-line {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-promo-photo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 116px;
+}
+.section-promo-photo-b {
+  margin-top: 60px;
+}
+.section-promo-photo-d {
+  margin-top: 60px;
+}
+.section-promo-ultimate {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 170px;
+}
+.section-promo-ultimate-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.88px;
+  width: 373px;
+  height: 132px;
+}
+.section-promo-ultimate-subtitle {
+  display: flex;
+}
+.section-promo-ultimate-subtitle-text {
+  font-weight: 400;
+  width: 699px;
+  height: 136px;
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 14px;
 }
