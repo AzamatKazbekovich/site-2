@@ -321,7 +321,8 @@ body {
   &-c {
     position: absolute;
     top: 899px;
-    left: 701px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   &-d {
@@ -334,7 +335,8 @@ body {
     position: absolute;
     bottom: 0px;
     text-align: center;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%);
 
     width: 388px;
 
@@ -356,3 +358,58 @@ body {
   }
 }
 // === / promo ===
+
+// === mail ===
+
+.section-mail {
+  height: 939px;
+  background: url("/image/Rectangle\ 486.png");
+  background-size: cover;
+
+  &-content {
+    height: 786px;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include font-main;
+
+      &-title {
+        font-weight: 600;
+        font-size: 36px;
+        margin-top: 140px;
+      }
+
+      &-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 26px;
+      }
+
+      &-mail {
+        margin-bottom: 16px;
+        input {
+          text-align: center;
+          background: rgba(255, 255, 255, 0.15);
+          border: none;
+          outline: none;
+          height: 60px;
+          width: 402px;
+          &::placeholder {
+            color: $color-white;
+          }
+        }
+      }
+
+      &-submit {
+        button {
+          height: 60px;
+          width: 402px;
+        }
+      }
+    }
+  }
+}
+
+// === / mail ===
