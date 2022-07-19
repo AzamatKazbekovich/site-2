@@ -210,7 +210,7 @@ body {
 
       &-r {
         margin-top: 230px;
-        margin-right: 10px;
+        margin-right: 50px;
       }
     }
 
@@ -260,22 +260,32 @@ body {
     }
 
     &-text {
-      width: 790px;
-      height: 93px;
-
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
-
+      margin-bottom: 8px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      margin-bottom: 8px;
     }
 
     &-line {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (max-width: $screen-md-max) {
+      &-text {
+        width: 450px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      &-text {
+        width: 790px;
+
+        height: 93px;
+      }
     }
   }
 
@@ -284,18 +294,26 @@ body {
     justify-content: space-between;
     margin-bottom: 116px;
 
-    &-b {
-      margin-top: 60px;
+    @media (max-width: 1616px) {
+      justify-content: space-around;
+
+      flex-wrap: wrap;
     }
 
-    &-d {
-      margin-top: 60px;
+    @media (min-width: 1617px) {
+      &-b {
+        margin-top: 60px;
+      }
+
+      &-d {
+        margin-top: 60px;
+      }
     }
   }
 
   &-ultimate {
     display: flex;
-    justify-content: space-around;
+
     @include font-main;
     margin-bottom: 170px;
 
@@ -303,8 +321,6 @@ body {
       font-weight: 600;
       font-size: 36px;
       line-height: 43.88px;
-      width: 373px;
-      height: 132px;
     }
 
     &-subtitle {
@@ -312,11 +328,48 @@ body {
 
       &-text {
         font-weight: 400;
-        width: 699px;
-        height: 136px;
         font-size: 18px;
         line-height: 28px;
         padding-left: 14px;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+      &-title {
+        text-align: center;
+        margin: center;
+      }
+
+      &-subtitle {
+        margin: auto;
+        &-text {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
+      margin-left: 10px;
+      margin-right: 10px;
+      &-title {
+        text-align: center;
+        margin: center;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      justify-content: space-around;
+      &-title {
+        width: 373px;
+        height: 132px;
+      }
+      &-subtitle {
+        &-text {
+          width: 699px;
+          height: 136px;
+        }
       }
     }
   }

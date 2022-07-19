@@ -458,7 +458,7 @@ body .red {
   }
   .section-header-content-r {
     margin-top: 230px;
-    margin-right: 10px;
+    margin-right: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -497,34 +497,50 @@ body .red {
   margin-bottom: 29px;
 }
 .section-promo-popular-text {
-  width: 790px;
-  height: 93px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 8px;
 }
 .section-promo-popular-line {
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 991px) {
+  .section-promo-popular-text {
+    width: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .section-promo-popular-text {
+    width: 790px;
+    height: 93px;
+  }
 }
 .section-promo-photo {
   display: flex;
   justify-content: space-between;
   margin-bottom: 116px;
 }
-.section-promo-photo-b {
-  margin-top: 60px;
+@media (max-width: 1616px) {
+  .section-promo-photo {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
-.section-promo-photo-d {
-  margin-top: 60px;
+@media (min-width: 1617px) {
+  .section-promo-photo-b {
+    margin-top: 60px;
+  }
+  .section-promo-photo-d {
+    margin-top: 60px;
+  }
 }
 .section-promo-ultimate {
   display: flex;
-  justify-content: space-around;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 170px;
 }
@@ -532,19 +548,54 @@ body .red {
   font-weight: 600;
   font-size: 36px;
   line-height: 43.88px;
-  width: 373px;
-  height: 132px;
 }
 .section-promo-ultimate-subtitle {
   display: flex;
 }
 .section-promo-ultimate-subtitle-text {
   font-weight: 400;
-  width: 699px;
-  height: 136px;
   font-size: 18px;
   line-height: 28px;
   padding-left: 14px;
+}
+@media (max-width: 575px) {
+  .section-promo-ultimate {
+    flex-direction: column;
+  }
+  .section-promo-ultimate-title {
+    text-align: center;
+    margin: center;
+  }
+  .section-promo-ultimate-subtitle {
+    margin: auto;
+  }
+  .section-promo-ultimate-subtitle-text {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .section-promo-ultimate {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .section-promo-ultimate-title {
+    text-align: center;
+    margin: center;
+  }
+}
+@media (min-width: 1200px) {
+  .section-promo-ultimate {
+    justify-content: space-around;
+  }
+  .section-promo-ultimate-title {
+    width: 373px;
+    height: 132px;
+  }
+  .section-promo-ultimate-subtitle-text {
+    width: 699px;
+    height: 136px;
+  }
 }
 
 .section-ad {
