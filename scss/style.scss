@@ -17,6 +17,16 @@ $color-white: #ffffff;
 $color-red: #a92a1d;
 $color-black: #000000;
 
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
 // === / Variables ===
 
 body {
@@ -52,30 +62,27 @@ body {
   }
 
   &-cap {
+    display: flex;
     position: relative;
     z-index: 10;
-    display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
     &-left {
       display: flex;
 
+      width: 100%;
       &-logo {
         @include font-secondary;
         font-size: 36px;
         line-height: 54px;
         font-weight: 700;
-        margin-left: 150px;
         margin-top: 28px;
       }
 
       &-clock {
-        margin-left: 37px;
         margin-top: 45px;
       }
 
       &-time {
-        margin-left: 13px;
         margin-top: 39px;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -83,20 +90,32 @@ body {
     }
 
     &-right {
-      &-link {
-        @include font-main;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        list-style: none;
-        display: flex;
-        margin-top: 39px;
-        margin-right: 174px;
+      @include font-main;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      margin-top: 39px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
 
-        li {
-          & + li {
-            margin-left: 63px;
-          }
+    @media (max-width: $screen-lg-max) {
+      flex-direction: column;
+      &-left {
+        justify-content: space-around;
+      }
+    }
+    @media (min-width: $screen-xl) {
+      &-left {
+        &-logo {
+          margin-left: 150px;
+        }
+        &-clock {
+          margin-left: 37px;
+        }
+        &-time {
+          margin-left: 13px;
         }
       }
     }
@@ -105,24 +124,7 @@ body {
   &-content {
     display: flex;
     justify-content: space-between;
-
-    &-left {
-      display: flex;
-      flex-direction: column;
-
-      &-subtitle {
-        display: flex;
-      }
-    }
-  }
-
-  &-content {
     &-l {
-      display: flex;
-      flex-direction: column;
-      margin-top: 336px;
-      margin-left: 150px;
-
       &-title {
         display: flex;
 
@@ -131,8 +133,6 @@ body {
         }
 
         &-text {
-          width: 460px;
-          height: 219px;
           font-weight: 700;
           font-size: 60px;
           line-height: 73.14px;
@@ -147,7 +147,6 @@ body {
       &-subtitle {
         display: flex;
         margin-left: 149px;
-        margin-bottom: 242px;
 
         &-button {
           background-color: $color-red;
@@ -169,15 +168,70 @@ body {
     }
 
     &-r {
-      margin-right: 80px;
       margin-top: 325px;
-
       &-facebook {
         margin-bottom: 48px;
       }
 
       &-twitter {
         margin-bottom: 48px;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      &-l {
+        margin-top: 200px;
+        margin-left: 10px;
+
+        &-title {
+          &-text {
+            width: 180px;
+          }
+        }
+      }
+
+      &-r {
+        margin-top: 230px;
+        margin-right: 10px;
+      }
+    }
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg-max) {
+      &-l {
+        margin-top: 200px;
+        margin-left: 10px;
+
+        &-title {
+          &-text {
+            width: 350px;
+          }
+        }
+      }
+
+      &-r {
+        margin-top: 230px;
+        margin-right: 10px;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      &-l {
+        margin-top: 336px;
+        margin-left: 150px;
+        &-title {
+          &-text {
+            width: 460px;
+            height: 219px;
+          }
+        }
+
+        &-subtitle {
+          margin-bottom: 242px;
+        }
+      }
+      &-r {
+        margin-right: 80px;
+        margin-top: 325px;
       }
     }
   }
@@ -439,7 +493,7 @@ body {
         font-weight: 400;
         font-size: 18px;
         line-height: 36px;
-        width: 379px;
+        width: 279px;
         height: 109px;
       }
     }
