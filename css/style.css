@@ -571,7 +571,6 @@ body .red {
   }
   .section-promo-ultimate-subtitle-text {
     width: 300px;
-    height: 300px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
@@ -600,27 +599,17 @@ body .red {
 
 .section-ad {
   position: relative;
-  height: 1537px;
   font-family: "Montserrat", sans-serif;
-}
-.section-ad-personal {
-  position: absolute;
-  display: flex;
-}
-.section-ad-personal-b {
-  padding-left: 82px;
 }
 .section-ad-personal-b-title {
   font-weight: 600;
   font-size: 36px;
   line-height: 43.88px;
-  margin-bottom: 24px;
 }
 .section-ad-personal-b-subtitle {
   font-weight: 600;
   font-size: 24px;
   line-height: 29.26px;
-  margin-bottom: 12px;
 }
 .section-ad-personal-b-text {
   font-weight: 400;
@@ -628,40 +617,10 @@ body .red {
   line-height: 28px;
   width: 496px;
 }
-.section-ad-a {
-  position: absolute;
-  top: 550px;
-  right: 0;
-}
-.section-ad-b {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.section-ad-c {
-  position: absolute;
-  top: 899px;
-  left: 50%;
-  transform: translate(-50%);
-}
-.section-ad-d {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-.section-ad-e {
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  left: 50%;
-  transform: translate(-50%);
-  width: 388px;
-}
 .section-ad-e-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 29.25px;
-  margin-bottom: 22px;
 }
 .section-ad-e-title .red {
   color: #a92a1d;
@@ -670,6 +629,129 @@ body .red {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+}
+@media (max-width: 575px) {
+  .section-ad {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-ad-personal {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-ad-personal-a img {
+    width: 75%;
+    height: 75%;
+    margin-left: 20px;
+  }
+  .section-ad-personal-b {
+    padding-left: 20px;
+  }
+  .section-ad-personal-b-text {
+    width: 380px;
+  }
+  .section-ad-a img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+  }
+  .section-ad-b img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+  }
+  .section-ad-c img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+  }
+  .section-ad-d img {
+    width: 70%;
+    height: 70%;
+    margin-left: 20px;
+  }
+  .section-ad-e {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section-ad-e-title {
+    width: 380px;
+  }
+  .section-ad-e-text {
+    width: 380px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1529px) {
+  .section-ad {
+    margin-left: 30px;
+  }
+  .section-ad-personal-a img {
+    width: 500px;
+    height: 500px;
+  }
+  .section-ad-e {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section-ad-e-text {
+    width: 500px;
+  }
+}
+@media (min-width: 1530px) {
+  .section-ad {
+    height: 1537px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-ad-personal {
+    position: absolute;
+    display: flex;
+  }
+  .section-ad-personal-b {
+    padding-left: 82px;
+  }
+  .section-ad-personal-b-title {
+    margin-bottom: 24px;
+  }
+  .section-ad-personal-b-subtitle {
+    margin-bottom: 12px;
+  }
+  .section-ad-personal-b-text {
+    width: 496px;
+  }
+  .section-ad-a {
+    position: absolute;
+    top: 550px;
+    right: 0;
+  }
+  .section-ad-b {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .section-ad-c {
+    position: absolute;
+    top: 899px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .section-ad-d {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .section-ad-e {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    width: 388px;
+  }
+  .section-ad-e-title {
+    margin-bottom: 22px;
+  }
 }
 
 .section-mail {

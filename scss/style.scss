@@ -345,7 +345,6 @@ body {
         margin: auto;
         &-text {
           width: 300px;
-          height: 300px;
         }
       }
     }
@@ -380,28 +379,24 @@ body {
 
 .section-ad {
   position: relative;
-  height: 1537px;
+
   @include font-main;
 
   &-personal {
-    position: absolute;
-    display: flex;
+    &-a {
+    }
 
     &-b {
-      padding-left: 82px;
-
       &-title {
         font-weight: 600;
         font-size: 36px;
         line-height: 43.88px;
-        margin-bottom: 24px;
       }
 
       &-subtitle {
         font-weight: 600;
         font-size: 24px;
         line-height: 29.26px;
-        margin-bottom: 12px;
       }
 
       &-text {
@@ -414,44 +409,23 @@ body {
   }
 
   &-a {
-    position: absolute;
-    top: 550px;
-    right: 0;
   }
 
   &-b {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
   }
 
   &-c {
-    position: absolute;
-    top: 899px;
-    left: 50%;
-    transform: translate(-50%);
   }
 
   &-d {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
   }
 
   &-e {
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%);
-
-    width: 388px;
-
     &-title {
       font-weight: 700;
       font-size: 24px;
       line-height: 29.25px;
-      margin-bottom: 22px;
+
       .red {
         color: $color-red;
       }
@@ -461,6 +435,148 @@ body {
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    display: flex;
+    flex-direction: column;
+
+    &-personal {
+      display: flex;
+      flex-direction: column;
+      &-a {
+        img {
+          width: 75%;
+          height: 75%;
+          margin-left: 20px;
+        }
+      }
+
+      &-b {
+        padding-left: 20px;
+        &-text {
+          width: 380px;
+        }
+      }
+    }
+    &-a {
+      img {
+        width: 70%;
+        height: 70%;
+        margin-left: 20px;
+      }
+    }
+
+    &-b {
+      img {
+        width: 70%;
+        height: 70%;
+        margin-left: 20px;
+      }
+    }
+
+    &-c {
+      img {
+        width: 70%;
+        height: 70%;
+        margin-left: 20px;
+      }
+    }
+
+    &-d {
+      img {
+        width: 70%;
+        height: 70%;
+        margin-left: 20px;
+      }
+    }
+
+    &-e {
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &-title {
+        width: 380px;
+      }
+      &-text {
+        width: 380px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm) and (max-width: 1529px) {
+    margin-left: 30px;
+    &-personal {
+      &-a {
+        img {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    }
+
+    &-e {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &-text {
+        width: 500px;
+      }
+    }
+  }
+
+  @media (min-width: 1530px) {
+    height: 1537px;
+    position: relative;
+    @include font-main;
+    &-personal {
+      position: absolute;
+      display: flex;
+      &-b {
+        padding-left: 82px;
+        &-title {
+          margin-bottom: 24px;
+        }
+        &-subtitle {
+          margin-bottom: 12px;
+        }
+        &-text {
+          width: 496px;
+        }
+      }
+    }
+
+    &-a {
+      position: absolute;
+      top: 550px;
+      right: 0;
+    }
+
+    &-b {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    &-c {
+      position: absolute;
+      top: 899px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-d {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    &-e {
+      position: absolute;
+      bottom: 0px;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+      width: 388px;
+      &-title {
+        margin-bottom: 22px;
+      }
     }
   }
 }
