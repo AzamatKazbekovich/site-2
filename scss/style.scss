@@ -675,6 +675,8 @@ body {
     &-rg {
       display: flex;
       flex-direction: column;
+      padding-bottom: 40px;
+      padding-right: 15px;
       &-rgym {
         font-weight: 700;
         font-size: 36px;
@@ -694,6 +696,8 @@ body {
     &-info {
       display: flex;
       flex-direction: column;
+      padding-bottom: 40px;
+      padding-right: 15px;
       &-inform {
         font-weight: 500;
         font-size: 24px;
@@ -716,7 +720,8 @@ body {
     &-more {
       display: flex;
       flex-direction: column;
-
+      padding-bottom: 40px;
+      padding-right: 15px;
       &-morelinks {
         font-weight: 500;
         font-size: 24px;
@@ -739,7 +744,7 @@ body {
     &-fol {
       display: flex;
       flex-direction: column;
-
+      padding-bottom: 40px;
       &-follow {
         font-weight: 500;
         font-size: 24px;
@@ -784,6 +789,14 @@ body {
           background: #292929;
         }
       }
+    }
+
+    @media (max-width: $screen-xs-max) {
+    }
+    @media (max-width: $screen-lg-max) {
+      flex-wrap: wrap;
+    }
+    @media (min-width: $screen-xl) {
     }
   }
 
