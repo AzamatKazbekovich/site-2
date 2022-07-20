@@ -585,10 +585,8 @@ body {
 // === mail ===
 
 .section-mail {
-  height: 939px;
-  background: url("/image/Rectangle\ 486.png") no-repeat 50% 50%;
-  background-size: cover;
   margin-bottom: 150px;
+  height: 939px;
 
   &-content {
     height: 786px;
@@ -602,6 +600,7 @@ body {
         font-weight: 600;
         font-size: 36px;
         margin-top: 140px;
+        text-align: center;
       }
 
       &-subtitle {
@@ -609,6 +608,7 @@ body {
         font-size: 18px;
         margin-top: 16px;
         margin-bottom: 26px;
+        text-align: center;
       }
 
       &-mail {
@@ -630,6 +630,30 @@ body {
         button {
           height: 60px;
           width: 402px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1500px) {
+    margin-top: 40px;
+    &-content {
+      width: 100%;
+      &-photo {
+        img {
+          margin-left: 50%;
+          transform: translate(-50%);
+          width: 360px;
+          height: 270px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1500px) {
+    background: url("/image/Rectangle\ 486.png") no-repeat 50% 50%;
+    background-size: cover;
+    &-content {
+      &-photo {
+        img {
         }
       }
     }

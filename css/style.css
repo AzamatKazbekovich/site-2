@@ -755,10 +755,8 @@ body .red {
 }
 
 .section-mail {
-  height: 939px;
-  background: url("/image/Rectangle 486.png") no-repeat 50% 50%;
-  background-size: cover;
   margin-bottom: 150px;
+  height: 939px;
 }
 .section-mail-content {
   height: 786px;
@@ -773,12 +771,14 @@ body .red {
   font-weight: 600;
   font-size: 36px;
   margin-top: 140px;
+  text-align: center;
 }
 .section-mail-content-list-subtitle {
   font-weight: 400;
   font-size: 18px;
   margin-top: 16px;
   margin-bottom: 26px;
+  text-align: center;
 }
 .section-mail-content-list-mail {
   margin-bottom: 16px;
@@ -797,6 +797,26 @@ body .red {
 .section-mail-content-list-submit button {
   height: 60px;
   width: 402px;
+}
+@media (max-width: 1500px) {
+  .section-mail {
+    margin-top: 40px;
+  }
+  .section-mail-content {
+    width: 100%;
+  }
+  .section-mail-content-photo img {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 360px;
+    height: 270px;
+  }
+}
+@media (min-width: 1500px) {
+  .section-mail {
+    background: url("/image/Rectangle 486.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
 }
 
 .section-footer {
